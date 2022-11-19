@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Clothing } = require('../models');
+const { clothing } = require('../models');
 
 
 // GET all clothing for homepage

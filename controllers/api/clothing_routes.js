@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { Clothing } = require('../../config/models');
-const { user, Clothing } = require('../models');
+const { clothing } = require('../../models');
+
 
 // GET all clothing for homepage
 router.get('/', async (req, res) => {
