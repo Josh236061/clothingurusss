@@ -24,6 +24,10 @@ account_purchase.init(
         model: 'clothing',
         key: 'id'
       }
+    },
+    cost: {
+      type: DataTypes.DECIMAL(10,2),
+      allowNull: false,
     }
   },
   {
