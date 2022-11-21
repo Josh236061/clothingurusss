@@ -1,0 +1,178 @@
+/* css */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(94, 94, 94);
+}
+
+.main-title, .bg-gradient {
+    color: #ccc;
+    background-image: linear-gradient(darkslateblue, darkseagreen);
+}
+
+.navbar {
+    color: darkslateblue;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    color: rgb(126, 107, 249);
+    background-color: rgb(199, 199, 199);
+}
+
+button {
+    border: 0;
+    padding: auto;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+textarea, input {
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+textarea:focus, input:focus {
+    outline: darkslateblue;
+    border: 2px solid #ccc;
+}
+
+textarea {
+    min-width: 25%;
+    min-height: 100px;
+}
+
+form > div {
+    margin-bottom: 0%;
+}
+
+form label {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 2px solid darkslateblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+main {
+    flex: 2;
+    padding: 2% 4%;
+}
+
+.btn {
+    background: rgb(94, 94, 94);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: darkslateblue;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .2s;
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background: none;
+    color: darkslateblue;
+}
+
+.delete-post-btn {
+    background-color: darkred;
+}
+
+.delete-post-btn:hover {
+    background-color: darksalmon;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 120%;
+}
+
+.post .title span {
+    font-style: oblique;
+    font-size: 85%;
+    color: rgb(94, 94, 94);
+}
+
+.edit-link {
+    color: darkseagreen;
+    display: block;
+    margin: 1.5% 0 2% 0;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comments {
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.comment .meta {
+    font-size: 85%;
+    margin-bottom: 1%;
+    opacity: .5;
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+footer {
+    border-top: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    font-size: 111%;
+}
+
+.card {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image element */
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
