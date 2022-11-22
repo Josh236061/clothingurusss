@@ -1,18 +1,28 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { clothing } = require('../models');
+const { clothing_product, User } = require('../models');
 
-// get all posts for homepage
 router.get('/', (req, res) => {
-  console.log('======================');
-  clothing.findAll({
-    attributes: ['item', 'color', 'size', 'price'],
+  clothing_product.findAll({
+    attributes: [
+      'id',
+      'product',
+      'color',
+      'size',
+      'price'
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
   })
-    .then(dbClothingData => {
-      const posts = dbClothingData.map(post => post.get({ plain: true }));
+    .then(dbClothingProductData => {
+      const clothing_product = dbClothingProductData.map(clothing_product => clothing_product.get({ plain: true }));
 
       res.render('homepage', {
-        posts,
+        clothing_product,
         loggedIn: req.session.loggedIn
       });
     })
@@ -22,24 +32,35 @@ router.get('/', (req, res) => {
     });
 });
 
-// get single post
-router.get('/post/:id', (req, res) => {
-  clothing.findOne({
+router.get('/clothing_product/:id', (req, res) => {
+  clothing_product.findOne({
     where: {
       id: req.params.id
     },
-    attributes: ['item', 'color', 'size', 'price'],
+    attributes: [
+      'id',
+      'product',
+      'color',
+      'size',
+      'price'
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
   })
-    .then(dbClothingData => {
-      if (!dbClothingData) {
+    .then(dbClothingProductData => {
+      if (!dbClothingProductData) {
         res.status(404).json({ message: 'No post found with this id' });
         return;
       }
 
-      const clothing = dbClothingData.get({ plain: true });
+      const clothing_product = dbClothingProductData.get({ plain: true });
 
-      res.render('single-clothing', {
-        clothing,
+      res.render('single-post', {
+        clothing_product,
         loggedIn: req.session.loggedIn
       });
     })

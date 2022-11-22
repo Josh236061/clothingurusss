@@ -1,15 +1,31 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class account_purchase extends Model {}
+class clothing_product extends Model {}
 
-account_purchase.init(
+clothing_product.init(
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
+    },
+    product: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    color: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    size: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    price: {
+      type: DataTypes.DECIMAL(10,2),
+      allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -18,25 +34,14 @@ account_purchase.init(
         key: 'id'
       }
     },
-    clothing_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'clothing',
-        key: 'id'
-      }
-    },
-    cost: {
-      type: DataTypes.DECIMAL(10,2),
-      allowNull: false,
-    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'account_purchase'
+    modelName: 'clothing_product'
   }
 );
 
-module.exports = account_purchase;
+module.exports = clothing_product;

@@ -1,14 +1,21 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { clothing, User } = require('../models');
+const { clothing_product, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
-  clothing.findAll({
+  console.log(req.session);
+  clothing_product.findAll({
     where: {
       user_id: req.session.user_id
     },
-    attributes: ['item', 'color', 'size', 'price'],
+    attributes: [
+      'id',
+      'product',
+      'color',
+      'size',
+      'price'
+    ],
     include: [
       {
         model: User,
@@ -16,9 +23,9 @@ router.get('/', withAuth, (req, res) => {
       }
     ]
   })
-    .then(dbClothingData => {
-      const clothing = dbClothingData.map(clothing => clothing.get({ plain: true }));
-      res.render('dashboard', { clothing, loggedIn: true });
+    .then(dbClothingProductData => {
+      const account = dbClothingProductData.map(account => account.get({ plain: true }));
+      res.render('dashboard', { account, loggedIn: true });
     })
     .catch(err => {
       console.log(err);
@@ -27,28 +34,34 @@ router.get('/', withAuth, (req, res) => {
 });
 
 router.get('/edit/:id', withAuth, (req, res) => {
-  clothing.findOne({
+  clothing_product.findOne({
     where: {
       id: req.params.id
     },
-    attributes: ['item', 'color', 'size', 'price'],
-    include: [
+    attributes: [
+      'id',
+      'product',
+      'color',
+      'size',
+      'price'
+    ],
+     include: [
       {
         model: User,
         attributes: ['username']
       }
-    ]
+    ] 
   })
-  .then(dbClothingData => {
-    if (!dbClothingData) {
-      res.status(404).json({ message: 'No dashboard found with this id' });
+  .then(dbClothingProductData => {
+    if (!dbClothingProductData) {
+      res.status(404).json({ message: 'No item found with this id' });
       return;
     }
 
-    const clothing = dbClothingData.get({ plain: true });
+    const account = dbClothingProductData.get({ plain: true });
 
     res.render('edit-clothing', {
-    clothing,
+      account,
     loggedIn: true
     });
   })
