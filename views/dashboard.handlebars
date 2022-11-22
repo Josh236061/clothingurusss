@@ -1,0 +1,39 @@
+{{!-- test multi-part form --}}
+<section>
+  <h2>Create New Post</h2>
+
+  <form class="new-post-form" action="/uploads" method="POST" enctype="multipart/form-data">
+    <div>
+      <label for="product_name">Title</label>
+      <input type="text" id="product_name" name="product_name" />
+    </div>
+    <div>
+      <label for="description">Description</label>
+      <input id="description" name="description" />
+    </div>
+    <div>
+      <label for="price">Price</label>
+      <input id="price" name="price" />
+    </div>
+    <label for="upload-input">upload a photo</label>
+    <input type="file" name="photoUpload" accept="image/*" id='upload-input' />
+    <input type="Submit" value="Create Post">
+    
+  </form>
+
+{{#if posts.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+
+<script src="/js/create-post.js"></script>
