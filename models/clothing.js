@@ -26,13 +26,13 @@ clothing.init(
     price: {
       type: DataTypes.DECIMAL(10,2),
       allowNull: false,
-    }
+    },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'clothing'
+    modelName: 'clothing',
   }
 );
 
