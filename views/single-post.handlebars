@@ -2,22 +2,12 @@
 {{> post-info clothing_product }}
 
 {{#if loggedIn}}
-
-<form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
     <button type="button" class="delete-post-btn">Delete</button>
   </div>
 </form>
 {{/if}}
 
-{{> comments post.comments}}
-
 {{#if loggedIn}}
-<script src="/js/comment.js"></script>
 <script src="/js/delete-post.js"></script>
 {{/if}}
