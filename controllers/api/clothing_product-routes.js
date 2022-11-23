@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../../config/connection');
 const { clothing_product, User } = require('../../models');
 const withAuth = require('../../utils/auth');
+const { route } = require('./user_routes');
 
 router.get("/", (req, res) => {
     clothing_product.findAll({
@@ -95,5 +96,24 @@ clothing_product.update(
       res.status(500).json(err);
     });
 });
-
+router.delete ('/:id', (req, res)=> {
+  clothing_product.destroy({
+    where:{
+      id: req.params.id
+    }
+  })
+  .then(dbDeleteData => {
+    if (!dbDeleteData) {
+      res.status(404).json({
+        message:'No Delete found with this id'
+      });
+      return;
+    }
+    res.json(dbDeleteData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  })
+})
 module.exports = router;
