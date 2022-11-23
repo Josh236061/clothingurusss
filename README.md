@@ -63,3 +63,11 @@ Protect API keys and sensitive information with environment variables.
 Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, etc.).
 
 Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+## Screenshot
+
+## URLs
+
+GitHub Repo URL: https://github.com/Josh236061/clothingurusss
+
+Heroku Published URL:
