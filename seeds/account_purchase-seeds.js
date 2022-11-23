@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
-const { account_purchase } = require('../models');
+const { clothing_product } = require('../models');
 
-const account_purchasedata = [
+const clothing_productdata = [
   {
     user_id: 1,
     clothing_id: 1,
@@ -19,6 +19,6 @@ const account_purchasedata = [
   }
 ];
 
-const seedAccount_Purchase = () => account_purchase.bulkCreate(account_purchasedata, {individualHooks: true});
+const seedclothing_product = () => clothing_product.bulkCreate(clothing_productdata, {individualHooks: true});
 
-module.exports = seedAccount_Purchase;
+module.exports = seedclothing_product;

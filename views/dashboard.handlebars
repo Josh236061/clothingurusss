@@ -1,23 +1,27 @@
 {{!-- test multi-part form --}}
 <section>
-  <h2>Create New Post</h2>
+  <h2>Post an item for sale</h2>
 
-  <form class="new-post-form" action="/uploads" method="POST" enctype="multipart/form-data">
+  <form class="new-post-form">
     <div>
-      <label for="product_name">Title</label>
-      <input type="text" id="product_name" name="product_name" />
+      <label for="product">Product</label>
+      <input type="text" id="product" name="product" />
     </div>
     <div>
-      <label for="description">Description</label>
-      <input id="description" name="description" />
+      <label for="size">Size</label>
+      <input id="size" name="size" />
+    </div>
+        <div>
+      <label for="color">Color</label>
+      <input id="color" name="color" />
     </div>
     <div>
       <label for="price">Price</label>
       <input id="price" name="price" />
     </div>
-    <label for="upload-input">upload a photo</label>
-    <input type="file" name="photoUpload" accept="image/*" id='upload-input' />
-    <input type="Submit" value="Create Post">
+{{!--      <label for="upload-input">upload a photo</label>
+    <input type="file" name="photoUpload" accept="image/*" id='upload-input' /> --}}
+    <input type="Submit" value="Create Post"> 
     
   </form>
 
