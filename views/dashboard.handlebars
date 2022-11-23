@@ -19,25 +19,23 @@
       <label for="price">Price</label>
       <input id="price" name="price" />
     </div>
-{{!--      <label for="upload-input">upload a photo</label>
-    <input type="file" name="photoUpload" accept="image/*" id='upload-input' /> --}}
     <input type="Submit" value="Create Post"> 
     
   </form>
 
-{{#if posts.length}}
+{{#if clothing_product.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
+  <h2>Items for Sale</h2>
+{{!--   <ol>
+    {{#each clothing_product as |clothing_product|}}
     <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      {{> post-info clothing_product}}
+      <a href="/dashboard/edit/{{clothing_product.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
-  </ol>
+  </ol> --}}
 </section>
-{{/if}}
+{{/if}}  
 
 
 <script src="/js/create-post.js"></script>

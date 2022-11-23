@@ -62,7 +62,8 @@ router.post('/', withAuth, (req, res) => {
     product: req.body.product,
     size: req.body.size,
     color: req.body.color,
-    price: req.body.price
+    price: req.body.price,
+    user_id: req.session.user_id
   })
     .then(dbClothingProductData => res.json(dbClothingProductData))
     .catch(err => {
