@@ -12,7 +12,7 @@ body, html {
 }
 
 .main-title, .bg-gradient {
-    color: #ccc;
+    color: rgb(40, 225, 108);
     background-image: linear-gradient(darkslateblue, darkseagreen);
 }
 
@@ -153,7 +153,7 @@ main {
 }
 
 footer {
-    border-top: 2px solid #ccc;
+    border-top: 2px solid rgb(40, 225, 108);
     display: flex;
     justify-content: center;
     padding: 2%;
