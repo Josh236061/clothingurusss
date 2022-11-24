@@ -14,7 +14,9 @@ We've got you COVERED (Get it? 'Covered' body-wise ;)) ENJOY!
 
 As a customer:
 
-I WANT information on clothing products posted so that I can make an informed decision as to what clothing products I would like to select based on the clothing type, size, price, etc.
+I  WANT the ability to design clothing with color and size  customizations so that I can create and post clothing  product lists  based on the clothing type, dimensions, and price
+
+## Acceptance Criteria
 
 WHEN I open the app.
 
