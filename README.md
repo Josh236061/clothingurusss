@@ -66,6 +66,9 @@ Have a quality README (with unique name, description, technologies used, screens
 
 ## Screenshot
 
+![image](https://user-images.githubusercontent.com/71394743/203683329-14a4547f-ef55-4182-a421-34d24f4357fb.png)
+
+
 ## URLs
 
 GitHub Repo URL: https://github.com/Josh236061/clothingurusss
