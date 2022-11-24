@@ -70,4 +70,4 @@ Have a quality README (with unique name, description, technologies used, screens
 
 GitHub Repo URL: https://github.com/Josh236061/clothingurusss
 
-Heroku Published URL:
+Heroku Published URL: https://project2clothingurusss.herokuapp.com/login
