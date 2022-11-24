@@ -14,7 +14,9 @@ We've got you COVERED (Get it? 'Covered' body-wise ;)) ENJOY!
 
 As a customer:
 
-I WANT information on clothing products sold so that I can make decisiosn as to what clothing products I would like to purchase based on the clothing type, size, price, etc.
+I  WANT the ability to design clothing with color and size  customizations so that I can create and post clothing  product lists  based on the clothing type, dimensions, and price
+
+## Acceptance Criteria
 
 WHEN I open the app.
 
@@ -22,13 +24,13 @@ THEN I will be presented with the ability to create an account, or to utilize my
 
 THEN I am presented with the options to select clothing types (i.e. shirts, pants, etc.) and am presented with related prices.
 
-THEN I am able to Add interested clothing products to my Cart for purchase.
+THEN I am able to Add interested clothing products to my Cart.
 
 WHEN I am presented with my Cart list once finished with clothing selections.
 
 THEN I am able to 'submit' my cart list to purchase the selected clothing.
 
-THEN I am presented with the purchased clothing products.
+THEN I am presented with the chosen clothing products.
 
 WHEN I am finished with my shopping UI experience.
 
@@ -66,8 +68,11 @@ Have a quality README (with unique name, description, technologies used, screens
 
 ## Screenshot
 
+![image](https://user-images.githubusercontent.com/71394743/203683329-14a4547f-ef55-4182-a421-34d24f4357fb.png)
+
+
 ## URLs
 
 GitHub Repo URL: https://github.com/Josh236061/clothingurusss
 
-Heroku Published URL:
+Heroku Published URL: https://project2clothingurusss.herokuapp.com/login
