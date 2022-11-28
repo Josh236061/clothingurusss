@@ -57,10 +57,32 @@ button {
 .buttons {
     margin-top: 3%;
 }
+
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.submit-button {
+   align-self:flex-end;
+}
+
 .form-label {
     font-size:20px;
     font-weight: 600;
     color: #e39848;
+}
+
+form label {
+    display: block;
+    text-shadow: 1px 1px 2px black;
+}
+
+.dashboard-label {
+    font-size: 22px !important;
+    color: #e39848 !important;
+    text-shadow: 1px 1px 2px black;
 }
 
 .post-list {
@@ -88,9 +110,6 @@ form > div {
     margin-bottom: 0%;
 }
 
-form label {
-    display: block;
-}
 
 .wrapper {
     width: 100%;
@@ -248,4 +267,10 @@ main {
 img{
     max-width: 300px;
     max-height: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+.navbar-item {
+    display: block !important; 
+}
 }
