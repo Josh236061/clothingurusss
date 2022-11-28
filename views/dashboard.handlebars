@@ -1,0 +1,72 @@
+{{!-- test multi-part form --}}
+<section>
+  <h2>Post an item for sale</h2>
+
+  <form class="new-post-form">
+    <div class="field is-horizontal">
+  <div class="field-label is-normal">
+    <label class="label">Product</label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <div class="control">
+        <input class="input" type="text" id="product" name="product" placeholder="Product">
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="field is-horizontal">
+  <div class="field-label is-normal">
+    <label class="label">Size</label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <div class="control">
+        <input class="input" type="text" id="size" name="size"placeholder="Size">
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Color</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" id="color" name="color" placeholder="Color">
+        </div>
+      </div>
+    </div>
+</div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Price</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" id="price" name="price" placeholder="Price">
+        </div>
+      </div>
+    </div>
+</div>
+    <input class="button is-info" type="Submit" value="Create Post"> 
+  </form>
+
+{{#if clothing_product.length}}
+<section>
+  <h2>Items for Sale</h2>
+  <ol>
+    {{#each clothing_product as |clothing_product|}}
+    <li>
+      {{> post-info clothing_product}}
+      <a href="/dashboard/edit/{{clothing_product.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}  
+
+
+<script src="/js/create-post.js"></script>

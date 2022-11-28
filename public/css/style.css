@@ -1,0 +1,251 @@
+/* css */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../images/Image\ 3::amanda-vick-ohWf6YuzOQk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(94, 94, 94);
+}
+h2 {
+    text-align: center;
+    font-size: 2em !important;
+    margin-bottom: 20px !important;
+    color: #e39848 !important;
+}
+
+.main-title, .bg-gradient {
+    color: #ccc;
+    background-image: linear-gradient(darkslateblue, darkseagreen);
+}
+
+.navbar {
+    background-color: transparent !important;
+  justify-content: flex-end !important;
+}
+.button.is-info {
+    background-color: #ead6c2 !important;
+    color: #e39848 !important;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    color: rgb(126, 107, 249);
+    background-color: rgb(199, 199, 199);
+}
+
+button {
+    border: 0;
+    padding: auto;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 3%;
+}
+.form-label {
+    font-size:20px;
+    font-weight: 600;
+    color: #e39848;
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+textarea, input {
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+textarea:focus, input:focus {
+    outline: darkslateblue;
+    border: 2px solid #ccc;
+}
+
+textarea {
+    min-width: 25%;
+    min-height: 100px;
+}
+
+form > div {
+    margin-bottom: 0%;
+}
+
+form label {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: 2px solid rgb(185, 140, 100);
+}
+
+main {
+    flex: 2;
+    padding: 2% 4%;
+}
+
+.btn {
+    background: rgb(94, 94, 94);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: darkslateblue;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .2s;
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background: none;
+    color: darkslateblue;
+}
+
+.delete-post-btn {
+    background-color: darkred;
+}
+
+.delete-post-btn:hover {
+    background-color: darksalmon;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 120%;
+}
+
+.post .title span {
+    font-style: oblique;
+    font-size: 85%;
+    color: rgb(94, 94, 94);
+}
+
+.edit-link {
+    color: darkseagreen;
+    display: block;
+    margin: 1.5% 0 2% 0;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comments {
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+.comment .meta {
+    font-size: 85%;
+    margin-bottom: 1%;
+    opacity: .5;
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+/* Footer */
+.footer-basic {
+    background-color:#ffffff;
+    color:#4b4c4d;
+    padding-top: 2%;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    padding-bottom: 2%;
+  }
+
+.card {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image element */
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
