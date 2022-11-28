@@ -255,6 +255,19 @@ main {
 .card {
     margin-bottom: 1em;
     margin-top: 1em;
+    width: 20% !important;
+}
+h1 {
+   color: rgb(105, 18, 18);
+}
+
+.card-content {
+    background-color: burlywood !important;
+    display: flex;
+    flex-direction: column;
+    font-family:fantasy!important;
+    
+
 }
 
 .rows {
