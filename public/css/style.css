@@ -8,16 +8,35 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+
+    background-image: url("../images/Image\ 3::amanda-vick-ohWf6YuzOQk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: rgb(94, 94, 94);
+}
+h2 {
+    text-align: center;
+    font-size: 2em !important;
+    margin-bottom: 20px !important;
+    color: #e39848 !important;
 }
 
 .main-title, .bg-gradient {
-    color: rgb(40, 225, 108);
+    color: #ccc;
+
     background-image: linear-gradient(darkslateblue, darkseagreen);
 }
 
 .navbar {
-    color: darkslateblue;
+
+    background-color: transparent !important;
+  justify-content: flex-end !important;
+}
+.button.is-info {
+    background-color: #ead6c2 !important;
+    color: #e39848 !important;
+
 }
 
 a{
@@ -38,6 +57,38 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.buttons {
+    margin-top: 3%;
+}
+
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.submit-button {
+   align-self:flex-end;
+}
+
+.form-label {
+    font-size:20px;
+    font-weight: 600;
+    color: #e39848;
+}
+
+form label {
+    display: block;
+    text-shadow: 1px 1px 2px black;
+}
+
+.dashboard-label {
+    font-size: 22px !important;
+    color: #e39848 !important;
+    text-shadow: 1px 1px 2px black;
+}
+
 
 .post-list {
     margin: 0;
@@ -64,9 +115,6 @@ form > div {
     margin-bottom: 0%;
 }
 
-form label {
-    display: block;
-}
 
 .wrapper {
     width: 100%;
@@ -78,11 +126,9 @@ form label {
 }
 
 header {
-    border-bottom: 2px solid darkslateblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2%;
+
+    border-bottom: 2px solid rgb(185, 140, 100);
+
 }
 
 main {
@@ -152,17 +198,87 @@ main {
     margin-bottom: 5%;
 }
 
-footer {
-    border-top: 2px solid rgb(40, 225, 108);
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    font-size: 111%;
-}
+
+/* Footer */
+.footer-basic {
+    background-color:#ffffff;
+    color:#4b4c4d;
+    padding-top: 2%;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    padding-bottom: 2%;
+  }
+
 
 .card {
     margin-bottom: 1em;
     margin-top: 1em;
+
+    width: 20% !important;
+}
+h1 {
+   color: rgb(105, 18, 18);
+}
+
+.card-content {
+    background-color: burlywood !important;
+    display: flex;
+    flex-direction: column;
+    font-family:fantasy!important;
+    
+
+
 }
 
 .rows {
@@ -175,4 +291,12 @@ footer {
 img{
     max-width: 300px;
     max-height: 300px;
+
+}
+
+@media screen and (min-width: 1024px) {
+.navbar-item {
+    display: block !important; 
+}
+
 }

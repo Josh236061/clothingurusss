@@ -3,24 +3,57 @@
   <h2>Post an item for sale</h2>
 
   <form class="new-post-form">
-    <div>
-      <label for="product">Product</label>
-      <input type="text" id="product" name="product" />
+
+    <div class="field is-horizontal">
+  <div class="field-label is-normal">
+    <label class="label dashboard-label">Product</label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <div class="control">
+        <input class="input" type="text" id="product" name="product" placeholder="Product">
+      </div>
     </div>
-    <div>
-      <label for="size">Size</label>
-      <input id="size" name="size" />
+  </div>
+</div>
+    <div class="field is-horizontal">
+  <div class="field-label is-normal">
+    <label class="label dashboard-label">Size</label>
+  </div>
+  <div class="field-body">
+    <div class="field">
+      <div class="control">
+        <input class="input" type="text" id="size" name="size"placeholder="Size">
+      </div>
     </div>
-        <div>
-      <label for="color">Color</label>
-      <input id="color" name="color" />
+  </div>
+</div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label dashboard-label">Color</label>
     </div>
-    <div>
-      <label for="price">Price</label>
-      <input id="price" name="price" />
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" id="color" name="color" placeholder="Color">
+        </div>
+      </div>
     </div>
-    <input type="Submit" value="Create Post"> 
-    
+</div>
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label dashboard-label">Price</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <div class="control">
+          <input class="input" type="text" id="price" name="price" placeholder="Price">
+        </div>
+      </div>
+    </div>
+</div>
+    <input class="button is-info submit-button" type="Submit" value="Create Post"> 
+
   </form>
 
 {{#if clothing_product.length}}
