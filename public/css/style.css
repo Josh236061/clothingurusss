@@ -8,6 +8,7 @@ body, html {
     padding: 0;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+
     background-image: url("../images/Image\ 3::amanda-vick-ohWf6YuzOQk-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -23,16 +24,19 @@ h2 {
 
 .main-title, .bg-gradient {
     color: #ccc;
+
     background-image: linear-gradient(darkslateblue, darkseagreen);
 }
 
 .navbar {
+
     background-color: transparent !important;
   justify-content: flex-end !important;
 }
 .button.is-info {
     background-color: #ead6c2 !important;
     color: #e39848 !important;
+
 }
 
 a{
@@ -85,6 +89,7 @@ form label {
     text-shadow: 1px 1px 2px black;
 }
 
+
 .post-list {
     margin: 0;
     padding: 0;
@@ -121,7 +126,9 @@ form > div {
 }
 
 header {
+
     border-bottom: 2px solid rgb(185, 140, 100);
+
 }
 
 main {
@@ -191,6 +198,7 @@ main {
     margin-bottom: 5%;
 }
 
+
 /* Footer */
 .footer-basic {
     background-color:#ffffff;
@@ -252,9 +260,11 @@ main {
     padding-bottom: 2%;
   }
 
+
 .card {
     margin-bottom: 1em;
     margin-top: 1em;
+
     width: 20% !important;
 }
 h1 {
@@ -268,6 +278,7 @@ h1 {
     font-family:fantasy!important;
     
 
+
 }
 
 .rows {
@@ -280,10 +291,12 @@ h1 {
 img{
     max-width: 300px;
     max-height: 300px;
+
 }
 
 @media screen and (min-width: 1024px) {
 .navbar-item {
     display: block !important; 
 }
+
 }
