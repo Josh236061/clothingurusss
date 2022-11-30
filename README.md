@@ -75,6 +75,8 @@ deployed application).
 
 ## Screenshot
 
+![image](https://user-images.githubusercontent.com/71394743/204696238-ab709e91-ba32-4088-8381-5679b1d18650.png)
+
 ![image](https://user-images.githubusercontent.com/71394743/203683329-14a4547f-ef55-4182-a421-34d24f4357fb.png)
 
 
