@@ -3,26 +3,31 @@ Rice U Bootcamp Project 2: Clothing Gurusss
 
 ## Introduction
 
-Welcome to Clothing Gurusss! Here, we post the best clothing products from all our valued members!
-We have the best Full-Stack Engineers working earnestly to provide the best User Interfacing Experience,
-our customer-base can rest assured they will have a seamless adventure surfing our clothing site for 
-their products of interest, placing their selected products within their virtual carts, and easily selecting 
-related products accordingly, all connected to their created Username, Email and Password. Here at Clothing Gurusss,
-We've got you COVERED (Get it? 'Covered' body-wise ;)) ENJOY!
+Welcome to Clothing Gurusss! Here, we post the best clothing products from all our valued vendor 
+members! We have the best Non-Guru Full-Stack Engineers working earnestly to provide the best 
+User Interfacing Experience, & we guarantee our vendor base can rest assured they will have a 
+seamless adventure surfing our site and providing them a simplistic approach to post
+their products of interest, placing their selected customized products within their virtual 
+carts, and easily submitting their related products accordingly, all connected to their created 
+Username, Email and Password. Here at Clothing Gurusss,
+We've got you COVERED (Get it? 'Covered', clothing? body-wise LOL, a Joke ;)) ENJOY!
 
 ## User Story
 
 As a customer:
 
-I  WANT the ability to design clothing with color and size  customizations so that I can create and post clothing  product lists  based on the clothing type, dimensions, and price
+I  WANT the ability to design clothing with color and size  customizations so that I can create 
+and post clothing  product lists  based on the clothing type, dimensions, and price
 
 ## Acceptance Criteria
 
 WHEN I open the app.
 
-THEN I will be presented with the ability to create an account, or to utilize my created account credentials to login into the site via a “submit" button.
+THEN I will be presented with the ability to create an account, or to utilize my created account 
+credentials to login into the site via a “submit" button.
 
-THEN I am presented with the options to select clothing types (i.e. shirts, pants, etc.) and am presented with related prices.
+THEN I am presented with the options to select clothing types (i.e. shirts, pants, etc.) and am 
+presented with related prices.
 
 THEN I am able to Add interested clothing products to my Cart.
 
@@ -62,9 +67,11 @@ Include authentication (express-session and cookies).
 
 Protect API keys and sensitive information with environment variables.
 
-Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, etc.).
+Have a clean repository that meets quality coding standards (file structure, naming conventions, 
+best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+Have a quality README (with unique name, description, technologies used, screenshot, and link to 
+deployed application).
 
 ## Screenshot
 
