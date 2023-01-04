@@ -84,4 +84,4 @@ deployed application).
 
 GitHub Repo URL: https://github.com/Josh236061/clothingurusss
 
-Heroku Published URL: https://project2clothingurusss.herokuapp.com/login
+Heroku Published URL: https://frozen-ocean-07710.herokuapp.com/
